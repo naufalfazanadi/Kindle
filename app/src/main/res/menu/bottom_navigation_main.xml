@@ -29,7 +29,7 @@
     <item
         android:id="@+id/action_profile"
         android:checked="false"
-        android:icon="@drawable/user"
+        android:icon="@drawable/profile"
         android:title="@string/profile"
         app:showAsAction="ifRoom" />
 </menu>
