@@ -53,6 +53,7 @@ public class ProfileFragment extends Fragment {
         ed = sp.edit();
         ed.clear();
         ed.apply();
+        getActivity().finish();
         startActivity(intent);
     }
 

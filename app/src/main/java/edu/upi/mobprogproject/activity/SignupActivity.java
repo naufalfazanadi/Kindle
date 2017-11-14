@@ -87,14 +87,14 @@ public class SignupActivity extends AppCompatActivity {
             Toast.makeText(this,"Ada yang salah, hubungi developer",Toast.LENGTH_LONG).show();
             return;
         }
-
-        Intent i = new Intent(this, LoginActivity.class);
-        startActivity(i);
+        finish();
+        //Intent i = new Intent(this, LoginActivity.class);
+        //startActivity(i);
     }
 
     public void toLogin(View view){
-        Intent i = new Intent(this, LoginActivity.class);
-        startActivity(i);
+        dbU.close();
+        finish();
     }
 
     @Override
