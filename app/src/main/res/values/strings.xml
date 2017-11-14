@@ -1,0 +1,40 @@
+<resources>
+    <string name="app_name">KINDLE</string>
+
+    <string name="home">Beranda</string>
+    <string name="homecaps">BERANDA</string>
+    <string name="calendar">Acara</string>
+    <string name="calendarcaps">ACARA</string>
+    <string name="feeds">Status</string>
+    <string name="feedscaps">STATUS</string>
+    <string name="messages">Pesan</string>
+    <string name="messagescaps">PESAN</string>
+    <string name="profile">Profil</string>
+    <string name="profilecaps">PROFIL</string>
+
+
+    <string name="log_but">Log in</string>
+
+    <string name="sig_intro">Bertetangga kini lebih asyik, Tunggu Apalagi Daftar Sekarang Juga</string>
+
+    <string name="sig_but">Sign up</string>
+
+    <string name="hint_login">Username/Email</string>
+    <string name="hint_mail">Email</string>
+    <string name="hint_pass">Password</string>
+    <string name="hint_name">Nama</string>
+    <string name="hint_username">Username</string>
+    <string name="signmess">Sudah punya akun?</string>
+    <string name="link_tosign"> daftar sekarang</string>
+    <string name="logmess">Belum punya akun?</string>
+    <string name="link_tologin">masuk sekarang</string>
+
+    <string name="tagline">Login untuk berkomunikasi</string>
+    <string name="search">Search</string>
+
+    <string name="loading">Loading .....</string>
+
+    <string name="def_name">Person Name</string>
+    <string name="def_chat">Hey fellas, it is....</string>
+    <string name="def_hour">00.00</string>
+</resources>
