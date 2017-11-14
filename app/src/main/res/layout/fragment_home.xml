@@ -1,5 +1,6 @@
 <RelativeLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -14,7 +15,7 @@
         android:layout_alignParentTop="true" />
 
     <android.support.v7.widget.Toolbar
-        android:id="@+id/toolbar3"
+        android:id="@+id/toolbar4"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentLeft="true"
@@ -22,55 +23,56 @@
         android:layout_alignParentTop="true"
         android:background="@color/white"
         android:minHeight="?attr/actionBarSize"
-        android:theme="?attr/actionBarTheme">
+        android:theme="?attr/actionBarTheme"
+        tools:ignore="RtlHardcoded">
 
         <RelativeLayout
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content">
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/searchView"
+            android:layout_centerHorizontal="true">
 
             <ImageView
-                android:id="@+id/gear"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:id="@+id/rt"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignTop="@+id/textView15"
+                android:contentDescription="@string/app_name"
+                android:maxHeight="30dip"
+                android:minHeight="30dip"
+                android:paddingRight="10dp"
+                android:src="@drawable/two"
+                tools:ignore="RtlSymmetry" />
+
+            <ImageView
+                android:id="@+id/notif"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
                 android:layout_alignParentEnd="true"
                 android:layout_alignParentTop="true"
                 android:layout_marginEnd="11dp"
-                android:maxHeight="5dip"
-                android:minHeight="5dip"
+                android:contentDescription="@string/app_name"
+                android:maxHeight="30dip"
+                android:minHeight="30dip"
                 android:paddingRight="10dp"
-                android:src="@drawable/bell" />
+                android:src="@drawable/bell"
+                tools:ignore="RtlSymmetry" />
+
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="118dp"
+                android:layout_toEndOf="@+id/rt"
+                android:maxHeight="40dip"
+                android:minHeight="40dip"
+                android:src="@drawable/logo" />
 
         </RelativeLayout>
 
     </android.support.v7.widget.Toolbar>
-
-    <TextView
-        android:id="@+id/textView10"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignBottom="@+id/toolbar3"
-        android:layout_alignParentStart="true"
-        android:layout_marginBottom="14dp"
-        android:layout_marginStart="16dp"
-        android:fontFamily="roboto"
-        android:text="2"
-        android:textColor="#000000"
-        android:textSize="20sp"
-        />
-
-    <TextView
-        android:id="@+id/textView9"
-        android:layout_width="wrap_content"
-
-        android:layout_height="wrap_content"
-        android:layout_alignBaseline="@+id/textView10"
-        android:layout_alignBottom="@+id/textView10"
-        android:layout_centerHorizontal="true"
-        android:layout_gravity="center"
-        android:fontFamily="roboto"
-        android:text="@string/app_name"
-        android:textColor="#000000"
-        android:textSize="20sp" />
 
     <Button
         android:id="@+id/urgentBtn"

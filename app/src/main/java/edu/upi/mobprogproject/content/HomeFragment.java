@@ -51,7 +51,7 @@ public class HomeFragment extends Fragment{
         if (toolbar4 != null) {
             ((AppCompatActivity)getActivity()).setSupportActionBar(toolbar4);
         }
-        toolbar4.setTitle(null);
+        //toolbar4.setTitle(null);
 
         mapView = (MapView) rootView.findViewById(R.id.mapView);
         mapView.onCreate(savedInstanceState);

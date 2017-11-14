@@ -23,27 +23,47 @@
 
         <RelativeLayout
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content">
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/searchView"
+            android:layout_centerHorizontal="true">
 
             <ImageView
                 android:id="@+id/bell"
-                android:paddingRight="10dp"
-                android:minHeight="30dip"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignTop="@+id/textView15"
+                android:contentDescription="@string/app_name"
                 android:maxHeight="30dip"
+                android:minHeight="30dip"
+                android:paddingRight="10dp"
                 android:src="@drawable/add"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                tools:ignore="RtlSymmetry"
-                android:contentDescription="@string/app_name" />
+                tools:ignore="RtlSymmetry" />
+
+            <ImageView
+                android:id="@+id/menu"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginEnd="11dp"
+                android:contentDescription="@string/app_name"
+                android:maxHeight="30dip"
+                android:minHeight="30dip"
+                android:paddingRight="10dp"
+                android:src="@drawable/menu"
+                tools:ignore="RtlSymmetry" />
 
             <TextView
+                android:id="@+id/textView15"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_toRightOf="@+id/bell"
+                android:layout_centerVertical="true"
+                android:layout_toEndOf="@+id/bell"
                 android:fontFamily="roboto"
                 android:paddingLeft="100dp"
-                android:layout_centerInParent="true"
                 android:text="@string/messagescaps"
+                android:textAlignment="center"
                 android:textColor="#000000"
                 android:textSize="20sp"
                 tools:ignore="RtlSymmetry" />
